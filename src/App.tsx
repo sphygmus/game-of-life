@@ -134,7 +134,6 @@ const App: React.FC = () => {
 	}
 
 	const updateCell = (x: number, y: number) => {
-		console.log("hell yes");
 		setGrid(oldGrid => {
 			const newGrid = structuredClone(oldGrid);
 			newGrid[y][x] = grid[y][x] ? 0 : 1;
